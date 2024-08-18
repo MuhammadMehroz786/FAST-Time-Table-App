@@ -4,7 +4,7 @@ import pandas as pd
 # Load the Excel file
 @st.cache_resource
 def load_excel_file():
-    file_path = '/Users/apple/Desktop/Fast 3rd Sem/Timetable Streamlit/timetable.xlsx'
+    file_path = 'timetable.xlsx'
     try:
         excel_data = pd.ExcelFile(file_path)
     except FileNotFoundError:
